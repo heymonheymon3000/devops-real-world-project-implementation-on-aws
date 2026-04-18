@@ -97,7 +97,7 @@ Updates the version string to `V903`, `V904`, etc.
 
 ```yaml
 image:
-  repository: 180789647333.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui
+  repository: 505058420581.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui
   tag: sha-abcdef1  # newly pushed tag
 ```
 

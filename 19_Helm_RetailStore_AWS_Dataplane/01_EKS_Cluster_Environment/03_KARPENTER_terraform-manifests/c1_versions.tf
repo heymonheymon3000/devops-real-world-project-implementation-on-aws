@@ -20,13 +20,13 @@ terraform {
   }
 
 
-  # Remote backend configuration using S3 
+  # Remote backend configuration using S3
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof"         
-    key            = "karpenter/dev/terraform.tfstate"            
-    region         = "us-east-1"                            
-    encrypt        = true                                   
-    use_lockfile   = true     
+    bucket         = "tfstate-dev-us-east-1-p4z95l"
+    key            = "karpenter/dev/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = true
+    use_lockfile   = true
   }
 }
 

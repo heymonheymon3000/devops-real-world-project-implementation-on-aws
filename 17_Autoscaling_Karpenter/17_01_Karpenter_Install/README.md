@@ -272,7 +272,7 @@ terraform apply -auto-approve
 ```
 
 
-### Step-07-03: Verify Karpenter 
+### Step-07-03: Verify Karpenter
 ```bash
 # List Helm Release
 helm list -n kube-system
@@ -284,7 +284,7 @@ helm status karpenter -n kube-system
 kubectl get pods -n kube-system
 
 # Verify Logs
-kubectl -n kube-system logs -f <KARPENTER_POD_NAME> 
+kubectl -n kube-system logs -f <KARPENTER_POD_NAME>
 or
 kubectl -n kube-system logs -f -l app.kubernetes.io/name=karpenter
 ```
@@ -310,7 +310,7 @@ spec:
     - alias: al2023@latest
 
   # Node IAM role created in Terraform
-  role: "arn:aws:iam::180789647333:role/retail-dev-karpenter-node-role"
+  role: "arn:aws:iam::505058420581:role/retail-dev-karpenter-node-role"
 
   # Auto-discover subnets (your cluster tags)
   subnetSelectorTerms:
@@ -415,7 +415,7 @@ spec:
         - key: kubernetes.io/os
           operator: In
           values: ["linux"]
-        
+
         # Cheaper, smaller instance families
         - key: karpenter.k8s.aws/instance-family
           operator: In
@@ -430,7 +430,7 @@ spec:
         # Karpenter can only launch nodes in AZs with configured VPC subnets
         - key: topology.kubernetes.io/zone
           operator: In
-          values: ["us-east-1a", "us-east-1b", "us-east-1c"]  
+          values: ["us-east-1a", "us-east-1b", "us-east-1c"]
 
   # Cluster-wide max scaling limit
   limits:

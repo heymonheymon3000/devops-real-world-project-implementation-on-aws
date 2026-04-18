@@ -11,7 +11,7 @@ Pretty much:
 
 ---
 
-### Architecture - AWS EKS cluster with External DNS 
+### Architecture - AWS EKS cluster with External DNS
 ![Architecture - EKS Cluster with EKS Cluster](../images/15_Architecture_EKS_Cluster_with_ExternalDNS_EKSaddon.png)
 
 
@@ -95,7 +95,7 @@ Edit:
 alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
 
 # Replace below with YOUR ACM Certificate ARN
-alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:180789647333:certificate/60a5bccd-5cb1-426a-b792-4d6d6c459edf
+alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:505058420581:certificate/60a5bccd-5cb1-426a-b792-4d6d6c459edf
 
 # Force HTTPS
 alb.ingress.kubernetes.io/ssl-redirect: '443'
@@ -169,7 +169,7 @@ This makes DNS mgmt **fully automated**.
 ## **Step-07: Clean-Up**
 
 ```bash
-# Move to section folder 
+# Move to section folder
 cd 16_RetailStore_Microservices_ExternalDNS
 
 # Delete everything

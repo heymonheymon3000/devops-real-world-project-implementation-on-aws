@@ -170,7 +170,7 @@ terraform {
 
   # Remote Backend Configuration
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof"     # 🔹 Update your S3 bucket name
+    bucket         = "tfstate-dev-us-east-1-p4z95l"     # 🔹 Update your S3 bucket name
     key            = "vpc/dev/terraform.tfstate"        # 🔹 Update key path (vpc/dev or eks/dev)
     region         = "us-east-1"                        # 🔹 Update region if required
     encrypt        = true
@@ -195,7 +195,7 @@ Terraform uses the S3 bucket to store and manage the remote state securely.
 
 ### Step-05-01: Create VPC
 ```bash
-# Change Directory 
+# Change Directory
 cd 01_VPC_terraform-manifests
 
 # Initialize Terraform
@@ -207,14 +207,14 @@ terraform validate
 # Preview the plan
 terraform plan
 
-# Apply configuration 
+# Apply configuration
 terraform apply -auto-approve
 ```
 
 
 ### Step-05-02: Create EKS Cluster
 ```bash
-# Change Directory 
+# Change Directory
 cd 02_EKS_terraform-manifests_with_addons
 
 # Initialize Terraform
@@ -226,7 +226,7 @@ terraform validate
 # Preview the plan
 terraform plan
 
-# Apply configuration 
+# Apply configuration
 terraform apply -auto-approve
 ```
 
@@ -291,4 +291,3 @@ This setup ensures your **EKS cluster is fully production-ready**, integrating s
 🎯 **You have now successfully provisioned an enhanced EKS cluster with all essential AWS AddOns!**
 
 ---
-

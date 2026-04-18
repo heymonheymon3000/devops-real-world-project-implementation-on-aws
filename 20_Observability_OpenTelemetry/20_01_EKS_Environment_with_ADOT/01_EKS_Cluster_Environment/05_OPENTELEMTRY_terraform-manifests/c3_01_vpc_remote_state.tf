@@ -4,7 +4,7 @@
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "tfstate-dev-us-east-1-jpjtof"     # Name of the remote S3 bucket where the VPC state is stored
+    bucket = "tfstate-dev-us-east-1-p4z95l"     # Name of the remote S3 bucket where the VPC state is stored
     key    = "vpc/dev/terraform.tfstate"        # Path to the VPC tfstate file within the bucket
     region = var.aws_region                    # Region where the S3 bucket exist
   }
@@ -31,5 +31,3 @@ output "private_subnet_ids" {
 output "public_subnet_ids" {
   value = data.terraform_remote_state.vpc.outputs.public_subnet_ids
 }
-
-

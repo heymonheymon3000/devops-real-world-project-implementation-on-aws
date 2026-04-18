@@ -423,7 +423,7 @@ aws iam list-attached-role-policies --role-name catalog-db-secrets-role
     "AttachedPolicies": [
         {
             "PolicyName": "catalog-db-secret-policy",
-            "PolicyArn": "arn:aws:iam::180789647333:policy/catalog-db-secret-policy"
+            "PolicyArn": "arn:aws:iam::505058420581:policy/catalog-db-secret-policy"
         }
     ]
 }
@@ -477,7 +477,7 @@ aws eks list-pod-identity-associations --cluster-name ${EKS_CLUSTER_NAME}
 kubectl get sa catalog-mysql-sa
 ```
 
-- Note: It’s perfectly fine if this ServiceAccount is not created yet 
+- Note: It’s perfectly fine if this ServiceAccount is not created yet
 it will be created automatically later in next section **09-04** when we deploy the Kubernetes manifests for the Catalog MySQL component.
 
 ---
@@ -496,7 +496,7 @@ it will be created automatically later in next section **09-04** when we deploy 
 ## What Next?
 [**Next:** Integrate AWS Secrets Manager with the Catalog microservice in **Section 09-04**](../09_04_AWS_Secrets_Manager_Catalog_Integration/)
 
--- 
+--
 
 
 ## Additional Reference

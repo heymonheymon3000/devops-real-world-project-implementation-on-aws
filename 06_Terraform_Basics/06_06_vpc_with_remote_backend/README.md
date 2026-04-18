@@ -1,4 +1,4 @@
-# Terraform Remote Backend 
+# Terraform Remote Backend
 
 ## Step-01: Introduction
 * A **backend** in Terraform defines **where state is stored** and **how operations (plan/apply) are executed**.
@@ -11,7 +11,7 @@
   * 🔒 **State locking** (with DynamoDB table, or via S3 use_lockfile = true)
   * ☁️ **Centralization** (essential for CI/CD and remote runs)
 
---- 
+---
 
 ### Terraform Local State File Challenges
 ![Terraform Local State File Challenges](../../images/06-06_01_Terraform_Local_State_Challenges.png)
@@ -39,7 +39,7 @@
 cd 06_05_remote_backend_s3bucket/terraform-manifests
 
 # Terraform Initialize
-terraform init 
+terraform init
 
 # Terraform Validate
 terraform validate
@@ -51,8 +51,8 @@ terraform plan
 terraform apply -auto-approve
 
 # Make a note of the S3 bucket name
-Example: tfstate-dev-us-east-1-jpjtof
-```  
+Example: tfstate-dev-us-east-1-p4z95l
+```
 ---
 
 ## Step-03: Enable Remote Backend in `06_06_vpc_with_remote_backend/terraform-manifests`
@@ -76,14 +76,14 @@ terraform {
       version = ">= 6.0"
     }
   }
-# Remote Backend 
+# Remote Backend
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof" # <-- Replace with your actual bucket name
+    bucket         = "tfstate-dev-us-east-1-p4z95l" # <-- Replace with your actual bucket name
     key            = "vpc/dev/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
     use_lockfile = true
-  }   
+  }
 }
 
 ```
@@ -104,7 +104,7 @@ Uncommenting this block tells Terraform to:
 
 ## Step-04: Execute Terraform Commnands
 ```bash
-# Change Directroy 
+# Change Directroy
 cd 06_06_vpc_with_remote_backend/terraform-manifests
 
 # Terraform Initialize

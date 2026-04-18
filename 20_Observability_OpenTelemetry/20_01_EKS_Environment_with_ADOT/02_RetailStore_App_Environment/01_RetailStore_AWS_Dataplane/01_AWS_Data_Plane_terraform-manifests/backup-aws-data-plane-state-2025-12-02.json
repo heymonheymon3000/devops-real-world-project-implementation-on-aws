@@ -5,15 +5,15 @@
   "lineage": "3dc89733-609d-e6ac-c9f6-734f5781085b",
   "outputs": {
     "cart_dynamodb_pod_identity_association_arn": {
-      "value": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-vbbolmpstbr9ll4up",
+      "value": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-vbbolmpstbr9ll4up",
       "type": "string"
     },
     "cart_dynamodb_policy_arn": {
-      "value": "arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy",
+      "value": "arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy",
       "type": "string"
     },
     "cart_dynamodb_role_arn": {
-      "value": "arn:aws:iam::180789647333:role/retail-dev-cart-dynamodb-role",
+      "value": "arn:aws:iam::505058420581:role/retail-dev-cart-dynamodb-role",
       "type": "string"
     },
     "catalog_rds_endpoint": {
@@ -25,11 +25,11 @@
       "type": "string"
     },
     "catalog_sa_getsecrets_role_arn": {
-      "value": "arn:aws:iam::180789647333:role/retail-dev-catalog-getsecrets-role",
+      "value": "arn:aws:iam::505058420581:role/retail-dev-catalog-getsecrets-role",
       "type": "string"
     },
     "catalog_sa_pod_identity_association_arn": {
-      "value": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-jn9yco4oumhgtnr6i",
+      "value": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-jn9yco4oumhgtnr6i",
       "type": "string"
     },
     "checkout_redis_endpoint": {
@@ -55,11 +55,11 @@
       "type": "string"
     },
     "orders_postgresql_sa_getsecrets_role_arn": {
-      "value": "arn:aws:iam::180789647333:role/retail-dev-orders-postgresql-getsecrets-role",
+      "value": "arn:aws:iam::505058420581:role/retail-dev-orders-postgresql-getsecrets-role",
       "type": "string"
     },
     "orders_postgresql_sa_pod_identity_association_arn": {
-      "value": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-we9brvdbzypti0xbs",
+      "value": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-we9brvdbzypti0xbs",
       "type": "string"
     },
     "orders_rds_postgresql_db_name": {
@@ -71,15 +71,15 @@
       "type": "string"
     },
     "orders_sqs_policy_arn": {
-      "value": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy",
+      "value": "arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy",
       "type": "string"
     },
     "orders_sqs_queue_arn": {
-      "value": "arn:aws:sqs:us-east-1:180789647333:retail-dev-orders-queue",
+      "value": "arn:aws:sqs:us-east-1:505058420581:retail-dev-orders-queue",
       "type": "string"
     },
     "orders_sqs_queue_url": {
-      "value": "https://sqs.us-east-1.amazonaws.com/180789647333/retail-dev-orders-queue",
+      "value": "https://sqs.us-east-1.amazonaws.com/505058420581/retail-dev-orders-queue",
       "type": "string"
     },
     "private_subnet_ids": {
@@ -113,7 +113,7 @@
       ]
     },
     "retailstore_db_secret_policy_arn": {
-      "value": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+      "value": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
       "type": "string"
     },
     "vpc_id": {
@@ -131,9 +131,9 @@
         {
           "schema_version": 0,
           "attributes": {
-            "account_id": "180789647333",
-            "arn": "arn:aws:iam::180789647333:user/kalyandev",
-            "id": "180789647333",
+            "account_id": "505058420581",
+            "arn": "arn:aws:iam::505058420581:user/kalyandev",
+            "id": "505058420581",
             "user_id": "AIDASUF7HC7SSJRDGMFBM"
           },
           "sensitive_attributes": [],
@@ -217,10 +217,10 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:secretsmanager:us-east-1:180789647333:secret:retailstore-db-secret-1-L6wzpn",
+            "arn": "arn:aws:secretsmanager:us-east-1:505058420581:secret:retailstore-db-secret-1-L6wzpn",
             "created_date": "2025-11-04T05:44:28Z",
             "description": "Retai Store Applications Standard Database secrets",
-            "id": "arn:aws:secretsmanager:us-east-1:180789647333:secret:retailstore-db-secret-1-L6wzpn",
+            "id": "arn:aws:secretsmanager:us-east-1:505058420581:secret:retailstore-db-secret-1-L6wzpn",
             "kms_key_id": "",
             "last_changed_date": "2025-11-04T05:44:28Z",
             "name": "retailstore-db-secret-1",
@@ -242,12 +242,12 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:secretsmanager:us-east-1:180789647333:secret:retailstore-db-secret-1-L6wzpn",
+            "arn": "arn:aws:secretsmanager:us-east-1:505058420581:secret:retailstore-db-secret-1-L6wzpn",
             "created_date": "2025-11-04T05:44:28Z",
-            "id": "arn:aws:secretsmanager:us-east-1:180789647333:secret:retailstore-db-secret-1-L6wzpn|AWSCURRENT",
+            "id": "arn:aws:secretsmanager:us-east-1:505058420581:secret:retailstore-db-secret-1-L6wzpn|AWSCURRENT",
             "region": "us-east-1",
             "secret_binary": "",
-            "secret_id": "arn:aws:secretsmanager:us-east-1:180789647333:secret:retailstore-db-secret-1-L6wzpn",
+            "secret_id": "arn:aws:secretsmanager:us-east-1:505058420581:secret:retailstore-db-secret-1-L6wzpn",
             "secret_string": "{\"username\":\"mydbadmin\",\"password\":\"kalyandb101\"}",
             "version_id": "03b7cd5f-6345-4056-ba0a-c1b93579c232",
             "version_stage": "AWSCURRENT",
@@ -285,7 +285,7 @@
             "backend": "s3",
             "config": {
               "value": {
-                "bucket": "tfstate-dev-us-east-1-jpjtof",
+                "bucket": "tfstate-dev-us-east-1-p4z95l",
                 "key": "eks/dev/terraform.tfstate",
                 "region": "us-east-1"
               },
@@ -301,24 +301,24 @@
             "defaults": null,
             "outputs": {
               "value": {
-                "ebs_csi_addon_arn": "arn:aws:eks:us-east-1:180789647333:addon/retail-dev-eksdemo1/aws-ebs-csi-driver/2acd6e54-25e9-56a0-e6c2-201240a347c5",
+                "ebs_csi_addon_arn": "arn:aws:eks:us-east-1:505058420581:addon/retail-dev-eksdemo1/aws-ebs-csi-driver/2acd6e54-25e9-56a0-e6c2-201240a347c5",
                 "ebs_csi_addon_default_version": "v1.53.0-eksbuild.1",
                 "ebs_csi_addon_id": "retail-dev-eksdemo1:aws-ebs-csi-driver",
                 "ebs_csi_addon_latest_version": "v1.53.0-eksbuild.1",
-                "ebs_csi_iam_role_arn": "arn:aws:iam::180789647333:role/retail-dev-ebs-csi-iam-role",
-                "ebs_csi_pod_identity_association_arn": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-e1cqcqr3n2cyy2oqa",
+                "ebs_csi_iam_role_arn": "arn:aws:iam::505058420581:role/retail-dev-ebs-csi-iam-role",
+                "ebs_csi_pod_identity_association_arn": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-e1cqcqr3n2cyy2oqa",
                 "eks_cluster_certificate_authority_data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJUHd1MTRZTzJIckF3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TlRFeU1ESXdNVEV6TVRoYUZ3MHpOVEV4TXpBd01URTRNVGhhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUURNUUR6YmhnNHpBWis5QTRNMnowWXpwWkdaMytUWEs3V3ZudEU0bnVPZURrU3d5a1dZY0xNdVZPYm0KNmlzVG9ORVp2VDMwdnpOL1o2My9xZno2dkhNNm5qeGdoMS8vSG4zRHhPNkVhbEYwVTFWR2NhSklPMzROWnYxdwpwdm9wRkRBSTdKZFZYMnF6YnVXQ2QrQ2orMXdiLy94MXRobkpjK0ErVE1OR2RkK1F2cXdWeEtLWGtpQ0grckZICnlkZ2RBc1U4aldIRlJhNStFaTdQK1hBVm41M2x3OHFGUWNMaHQxTnp6RzU2eHEzNTdRMUZEQmFkWUx4c0VvZE8KeUlEOWQzV3laL00zTHdXK2pUbEtISUowUXF0UUM1Z1R3OTdGU3VBZEgyU3I3bW1KTVpNS3FWODVtK2lJR2NjWApIN3VZTHB1Vkw5T0hOZVdYL2ovNElYTzhHR2VUQWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJRU0xDQlVHejFjNGs0eS9HL09XaE1adldNaFN6QVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQnkyaDVRM3dQcQpEV0FPR2hYRXpnL3FhTXpPNTh1MjRENGNNUGFDN1N2MHRuMTdRd25VSGMvbCswWHZSSXpuYVJoTXgvK0d5L3ZFCkRxVmxVcWI4MERBSzhPNHFCQ3dleDAyMVcza2U1bUl2d2FiSEJTdXBnSkJJWEh4ZE1HbFl3NzZvZXkrMHFUdjIKS1FOYTIyWmFmS0hmWU1pa1NlTDMrWHhkSTRnYnRiWGVTbGFUV1FvNk04LzFTa25vNW5yV1BmQzBpSTBabVlnRgoyRlg5ZjhYdzY1VWVKRGI3dEFuNzR4dW1WaUJkU0NVSmVQUEkyMW1ZZDN5R29EWVFINWRldWp2VGhaVGNidkFOCmZTOHJ2MzJmZ25wME14RHJ1bEowamNUS3VxOU5oM0VMYWRHdWd2Y0h6Z201d0x3MmJYaE5nbTJsNVhMN0s3b2kKTXVuVEFRUjg4L1Y5Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
                 "eks_cluster_endpoint": "https://3DB1DBB0C261A45A73033A8B4B02E014.gr7.us-east-1.eks.amazonaws.com",
                 "eks_cluster_id": "retail-dev-eksdemo1",
                 "eks_cluster_name": "retail-dev-eksdemo1",
                 "eks_cluster_security_group_id": "sg-05bc97e69165e0219",
                 "eks_cluster_version": "1.33",
-                "eks_node_instance_role_arn": "arn:aws:iam::180789647333:role/retail-dev-eks-nodegroup-role",
-                "externaldns_addon_arn": "arn:aws:eks:us-east-1:180789647333:addon/retail-dev-eksdemo1/external-dns/64cd6e52-b303-4fba-2f10-9585901c559f",
+                "eks_node_instance_role_arn": "arn:aws:iam::505058420581:role/retail-dev-eks-nodegroup-role",
+                "externaldns_addon_arn": "arn:aws:eks:us-east-1:505058420581:addon/retail-dev-eksdemo1/external-dns/64cd6e52-b303-4fba-2f10-9585901c559f",
                 "externaldns_addon_id": "retail-dev-eksdemo1:external-dns",
                 "externaldns_addon_version": "v0.20.0-eksbuild.1",
                 "externaldns_pod_identity_association_id": "a-ngvzfvxztuyjnyjbg",
-                "externaldns_role_arn": "arn:aws:iam::180789647333:role/retail-dev-externaldns-role",
+                "externaldns_role_arn": "arn:aws:iam::505058420581:role/retail-dev-externaldns-role",
                 "helm_aws_secrets_provider_metadata": {
                   "app_version": "",
                   "chart": "secrets-store-csi-driver-provider-aws",
@@ -355,14 +355,14 @@
                   "values": "{\"syncSecret\":{\"enabled\":true}}",
                   "version": "1.5.4"
                 },
-                "lbc_iam_policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-AWSLoadBalancerControllerIAMPolicy",
-                "lbc_iam_role_arn": "arn:aws:iam::180789647333:role/retail-dev-lbc-iam-role",
-                "lbc_pod_identity_association_arn": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-xgavs0ubvylhtyhs9",
-                "metrics_server_agent_eksaddon_arn": "arn:aws:eks:us-east-1:180789647333:addon/retail-dev-eksdemo1/metrics-server/dccd6e53-f074-a8ca-25dd-806a98e2051c",
+                "lbc_iam_policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-AWSLoadBalancerControllerIAMPolicy",
+                "lbc_iam_role_arn": "arn:aws:iam::505058420581:role/retail-dev-lbc-iam-role",
+                "lbc_pod_identity_association_arn": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-xgavs0ubvylhtyhs9",
+                "metrics_server_agent_eksaddon_arn": "arn:aws:eks:us-east-1:505058420581:addon/retail-dev-eksdemo1/metrics-server/dccd6e53-f074-a8ca-25dd-806a98e2051c",
                 "metrics_server_agent_eksaddon_id": "retail-dev-eksdemo1:metrics-server",
                 "metrics_server_eksaddon_default_version": "v0.8.0-eksbuild.5",
                 "metrics_server_eksaddon_lastest_version": "v0.8.0-eksbuild.5",
-                "pod_identity_agent_eksaddon_arn": "arn:aws:eks:us-east-1:180789647333:addon/retail-dev-eksdemo1/eks-pod-identity-agent/e2cd6e53-f071-07dd-a9f8-2778139cb89e",
+                "pod_identity_agent_eksaddon_arn": "arn:aws:eks:us-east-1:505058420581:addon/retail-dev-eksdemo1/eks-pod-identity-agent/e2cd6e53-f071-07dd-a9f8-2778139cb89e",
                 "pod_identity_agent_eksaddon_default_version": "v1.3.10-eksbuild.1",
                 "pod_identity_agent_eksaddon_id": "retail-dev-eksdemo1:eks-pod-identity-agent",
                 "pod_identity_agent_eksaddon_lastest_version": "v1.3.10-eksbuild.1",
@@ -498,7 +498,7 @@
             "backend": "s3",
             "config": {
               "value": {
-                "bucket": "tfstate-dev-us-east-1-jpjtof",
+                "bucket": "tfstate-dev-us-east-1-p4z95l",
                 "key": "vpc/dev/terraform.tfstate",
                 "region": "us-east-1"
               },
@@ -582,7 +582,7 @@
             "allocated_storage": 20,
             "allow_major_version_upgrade": null,
             "apply_immediately": false,
-            "arn": "arn:aws:rds:us-east-1:180789647333:db:mydb3",
+            "arn": "arn:aws:rds:us-east-1:505058420581:db:mydb3",
             "auto_minor_version_upgrade": true,
             "availability_zone": "us-east-1b",
             "backup_retention_period": 1,
@@ -717,7 +717,7 @@
             "allocated_storage": 20,
             "allow_major_version_upgrade": null,
             "apply_immediately": false,
-            "arn": "arn:aws:rds:us-east-1:180789647333:db:orders-postgres-db",
+            "arn": "arn:aws:rds:us-east-1:505058420581:db:orders-postgres-db",
             "auto_minor_version_upgrade": true,
             "availability_zone": "us-east-1b",
             "backup_retention_period": 7,
@@ -755,7 +755,7 @@
             "identifier_prefix": "",
             "instance_class": "db.t4g.micro",
             "iops": 0,
-            "kms_key_id": "arn:aws:kms:us-east-1:180789647333:key/e78cf116-2c00-4d9c-9adf-a85a063936d8",
+            "kms_key_id": "arn:aws:kms:us-east-1:505058420581:key/e78cf116-2c00-4d9c-9adf-a85a063936d8",
             "latest_restorable_time": "2025-12-02T05:46:16Z",
             "license_model": "postgresql-license",
             "listener_endpoint": [],
@@ -850,7 +850,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:rds:us-east-1:180789647333:subgrp:retail-dev-rds-postgresql-subnet-group",
+            "arn": "arn:aws:rds:us-east-1:505058420581:subgrp:retail-dev-rds-postgresql-subnet-group",
             "description": "Subnet group for Orders RDS PostgreSQL",
             "id": "retail-dev-rds-postgresql-subnet-group",
             "name": "retail-dev-rds-postgresql-subnet-group",
@@ -890,7 +890,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:rds:us-east-1:180789647333:subgrp:retail-dev-rds-private-subnets",
+            "arn": "arn:aws:rds:us-east-1:505058420581:subgrp:retail-dev-rds-private-subnets",
             "description": "Managed by Terraform",
             "id": "retail-dev-rds-private-subnets",
             "name": "retail-dev-rds-private-subnets",
@@ -930,7 +930,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:dynamodb:us-west-2:180789647333:table/Items",
+            "arn": "arn:aws:dynamodb:us-west-2:505058420581:table/Items",
             "attribute": [
               {
                 "name": "customerId",
@@ -1018,7 +1018,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "association_arn": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-vbbolmpstbr9ll4up",
+            "association_arn": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-vbbolmpstbr9ll4up",
             "association_id": "a-vbbolmpstbr9ll4up",
             "cluster_name": "retail-dev-eksdemo1",
             "disable_session_tags": false,
@@ -1026,7 +1026,7 @@
             "id": "a-vbbolmpstbr9ll4up",
             "namespace": "default",
             "region": "us-east-1",
-            "role_arn": "arn:aws:iam::180789647333:role/retail-dev-cart-dynamodb-role",
+            "role_arn": "arn:aws:iam::505058420581:role/retail-dev-cart-dynamodb-role",
             "service_account": "carts",
             "tags": null,
             "tags_all": {},
@@ -1051,7 +1051,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "association_arn": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-jn9yco4oumhgtnr6i",
+            "association_arn": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-jn9yco4oumhgtnr6i",
             "association_id": "a-jn9yco4oumhgtnr6i",
             "cluster_name": "retail-dev-eksdemo1",
             "disable_session_tags": false,
@@ -1059,7 +1059,7 @@
             "id": "a-jn9yco4oumhgtnr6i",
             "namespace": "default",
             "region": "us-east-1",
-            "role_arn": "arn:aws:iam::180789647333:role/retail-dev-catalog-getsecrets-role",
+            "role_arn": "arn:aws:iam::505058420581:role/retail-dev-catalog-getsecrets-role",
             "service_account": "catalog",
             "tags": null,
             "tags_all": {},
@@ -1084,7 +1084,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "association_arn": "arn:aws:eks:us-east-1:180789647333:podidentityassociation/retail-dev-eksdemo1/a-we9brvdbzypti0xbs",
+            "association_arn": "arn:aws:eks:us-east-1:505058420581:podidentityassociation/retail-dev-eksdemo1/a-we9brvdbzypti0xbs",
             "association_id": "a-we9brvdbzypti0xbs",
             "cluster_name": "retail-dev-eksdemo1",
             "disable_session_tags": false,
@@ -1092,7 +1092,7 @@
             "id": "a-we9brvdbzypti0xbs",
             "namespace": "default",
             "region": "us-east-1",
-            "role_arn": "arn:aws:iam::180789647333:role/retail-dev-orders-postgresql-getsecrets-role",
+            "role_arn": "arn:aws:iam::505058420581:role/retail-dev-orders-postgresql-getsecrets-role",
             "service_account": "orders",
             "tags": null,
             "tags_all": {},
@@ -1118,7 +1118,7 @@
           "schema_version": 0,
           "attributes": {
             "apply_immediately": null,
-            "arn": "arn:aws:elasticache:us-east-1:180789647333:cluster:retail-dev-checkout-redis",
+            "arn": "arn:aws:elasticache:us-east-1:505058420581:cluster:retail-dev-checkout-redis",
             "auto_minor_version_upgrade": "true",
             "availability_zone": "us-east-1b",
             "az_mode": "single-az",
@@ -1191,7 +1191,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:elasticache:us-east-1:180789647333:subnetgroup:retail-dev-redis-subnets",
+            "arn": "arn:aws:elasticache:us-east-1:505058420581:subnetgroup:retail-dev-redis-subnets",
             "description": "Managed by Terraform",
             "id": "retail-dev-redis-subnets",
             "name": "retail-dev-redis-subnets",
@@ -1223,10 +1223,10 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy",
+            "arn": "arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy",
             "attachment_count": 0,
             "description": "Allow Cart microservice full access to DynamoDB",
-            "id": "arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy",
+            "id": "arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy",
             "name": "retail-dev-cart-dynamodb-policy",
             "name_prefix": "",
             "path": "/",
@@ -1238,7 +1238,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy"
+            "arn": "arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy"
           },
           "private": "bnVsbA=="
         }
@@ -1253,14 +1253,14 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy",
+            "arn": "arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy",
             "attachment_count": 0,
             "description": "Allow Orders microservice to interact with Amazon SQS",
-            "id": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy",
+            "id": "arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy",
             "name": "retail-dev-orders-sqs-policy",
             "name_prefix": "",
             "path": "/",
-            "policy": "{\"Statement\":[{\"Action\":[\"sqs:SendMessage\",\"sqs:ReceiveMessage\",\"sqs:DeleteMessage\",\"sqs:GetQueueAttributes\",\"sqs:GetQueueUrl\",\"sqs:ListQueues\",\"sqs:PurgeQueue\"],\"Effect\":\"Allow\",\"Resource\":\"arn:aws:sqs:us-east-1:180789647333:retail-dev-orders-queue\",\"Sid\":\"OrdersSQSAccess\"}],\"Version\":\"2012-10-17\"}",
+            "policy": "{\"Statement\":[{\"Action\":[\"sqs:SendMessage\",\"sqs:ReceiveMessage\",\"sqs:DeleteMessage\",\"sqs:GetQueueAttributes\",\"sqs:GetQueueUrl\",\"sqs:ListQueues\",\"sqs:PurgeQueue\"],\"Effect\":\"Allow\",\"Resource\":\"arn:aws:sqs:us-east-1:505058420581:retail-dev-orders-queue\",\"Sid\":\"OrdersSQSAccess\"}],\"Version\":\"2012-10-17\"}",
             "policy_id": "ANPASUF7HC7S6ZBPMLMLX",
             "tags": null,
             "tags_all": {}
@@ -1268,7 +1268,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy"
+            "arn": "arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy"
           },
           "private": "bnVsbA==",
           "dependencies": [
@@ -1286,14 +1286,14 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+            "arn": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
             "attachment_count": 0,
             "description": "Allows access to retailstore-db-secret* in AWS Secrets Manager",
-            "id": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+            "id": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
             "name": "retail-dev-retailstore-db-secret-policy",
             "name_prefix": "",
             "path": "/",
-            "policy": "{\"Statement\":[{\"Action\":[\"secretsmanager:GetSecretValue\",\"secretsmanager:DescribeSecret\"],\"Effect\":\"Allow\",\"Resource\":\"arn:aws:secretsmanager:us-east-1:180789647333:secret:retailstore-db-secret*\"}],\"Version\":\"2012-10-17\"}",
+            "policy": "{\"Statement\":[{\"Action\":[\"secretsmanager:GetSecretValue\",\"secretsmanager:DescribeSecret\"],\"Effect\":\"Allow\",\"Resource\":\"arn:aws:secretsmanager:us-east-1:505058420581:secret:retailstore-db-secret*\"}],\"Version\":\"2012-10-17\"}",
             "policy_id": "ANPASUF7HC7S466VKWEYI",
             "tags": null,
             "tags_all": {}
@@ -1301,7 +1301,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy"
+            "arn": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy"
           },
           "private": "bnVsbA==",
           "dependencies": [
@@ -1319,7 +1319,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:iam::180789647333:role/retail-dev-cart-dynamodb-role",
+            "arn": "arn:aws:iam::505058420581:role/retail-dev-cart-dynamodb-role",
             "assume_role_policy": "{\"Statement\":[{\"Action\":[\"sts:TagSession\",\"sts:AssumeRole\"],\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"pods.eks.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}",
             "create_date": "2025-12-02T05:41:23Z",
             "description": "",
@@ -1347,7 +1347,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
+            "account_id": "505058420581",
             "name": "retail-dev-cart-dynamodb-role"
           },
           "private": "bnVsbA==",
@@ -1366,7 +1366,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:iam::180789647333:role/retail-dev-catalog-getsecrets-role",
+            "arn": "arn:aws:iam::505058420581:role/retail-dev-catalog-getsecrets-role",
             "assume_role_policy": "{\"Statement\":[{\"Action\":[\"sts:TagSession\",\"sts:AssumeRole\"],\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"pods.eks.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}",
             "create_date": "2025-12-02T05:41:22Z",
             "description": "",
@@ -1394,7 +1394,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
+            "account_id": "505058420581",
             "name": "retail-dev-catalog-getsecrets-role"
           },
           "private": "bnVsbA==",
@@ -1413,7 +1413,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:iam::180789647333:role/retail-dev-orders-postgresql-getsecrets-role",
+            "arn": "arn:aws:iam::505058420581:role/retail-dev-orders-postgresql-getsecrets-role",
             "assume_role_policy": "{\"Statement\":[{\"Action\":[\"sts:TagSession\",\"sts:AssumeRole\"],\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"pods.eks.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}",
             "create_date": "2025-12-02T05:41:23Z",
             "description": "",
@@ -1441,7 +1441,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
+            "account_id": "505058420581",
             "name": "retail-dev-orders-postgresql-getsecrets-role"
           },
           "private": "bnVsbA==",
@@ -1460,15 +1460,15 @@
         {
           "schema_version": 0,
           "attributes": {
-            "id": "retail-dev-cart-dynamodb-role/arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy",
+            "id": "retail-dev-cart-dynamodb-role/arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy",
             "role": "retail-dev-cart-dynamodb-role"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-cart-dynamodb-policy",
+            "account_id": "505058420581",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-cart-dynamodb-policy",
             "role": "retail-dev-cart-dynamodb-role"
           },
           "private": "bnVsbA==",
@@ -1489,15 +1489,15 @@
         {
           "schema_version": 0,
           "attributes": {
-            "id": "retail-dev-catalog-getsecrets-role/arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+            "id": "retail-dev-catalog-getsecrets-role/arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
             "role": "retail-dev-catalog-getsecrets-role"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+            "account_id": "505058420581",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
             "role": "retail-dev-catalog-getsecrets-role"
           },
           "private": "bnVsbA==",
@@ -1519,15 +1519,15 @@
         {
           "schema_version": 0,
           "attributes": {
-            "id": "retail-dev-orders-postgresql-getsecrets-role/arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+            "id": "retail-dev-orders-postgresql-getsecrets-role/arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
             "role": "retail-dev-orders-postgresql-getsecrets-role"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-retailstore-db-secret-policy",
+            "account_id": "505058420581",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-retailstore-db-secret-policy",
             "role": "retail-dev-orders-postgresql-getsecrets-role"
           },
           "private": "bnVsbA==",
@@ -1549,15 +1549,15 @@
         {
           "schema_version": 0,
           "attributes": {
-            "id": "retail-dev-orders-postgresql-getsecrets-role/arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy",
+            "id": "retail-dev-orders-postgresql-getsecrets-role/arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy",
             "role": "retail-dev-orders-postgresql-getsecrets-role"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
-            "policy_arn": "arn:aws:iam::180789647333:policy/retail-dev-orders-sqs-policy",
+            "account_id": "505058420581",
+            "policy_arn": "arn:aws:iam::505058420581:policy/retail-dev-orders-sqs-policy",
             "role": "retail-dev-orders-postgresql-getsecrets-role"
           },
           "private": "bnVsbA==",
@@ -1579,7 +1579,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:us-east-1:180789647333:security-group/sg-003a837ed9de285f5",
+            "arn": "arn:aws:ec2:us-east-1:505058420581:security-group/sg-003a837ed9de285f5",
             "description": "Allow MySQL access from EKS cluster",
             "egress": [
               {
@@ -1614,7 +1614,7 @@
             ],
             "name": "retail-dev-rds-mysql-sg",
             "name_prefix": "",
-            "owner_id": "180789647333",
+            "owner_id": "505058420581",
             "region": "us-east-1",
             "revoke_rules_on_delete": false,
             "tags": {
@@ -1629,7 +1629,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
+            "account_id": "505058420581",
             "id": "sg-003a837ed9de285f5",
             "region": "us-east-1"
           },
@@ -1650,7 +1650,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:us-east-1:180789647333:security-group/sg-066c015d5fecd60dc",
+            "arn": "arn:aws:ec2:us-east-1:505058420581:security-group/sg-066c015d5fecd60dc",
             "description": "Allow RDS PostgreSQL access from EKS cluster",
             "egress": [
               {
@@ -1685,7 +1685,7 @@
             ],
             "name": "retail-dev-rds-postgresql-sg",
             "name_prefix": "",
-            "owner_id": "180789647333",
+            "owner_id": "505058420581",
             "region": "us-east-1",
             "revoke_rules_on_delete": false,
             "tags": {
@@ -1700,7 +1700,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
+            "account_id": "505058420581",
             "id": "sg-066c015d5fecd60dc",
             "region": "us-east-1"
           },
@@ -1721,7 +1721,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:us-east-1:180789647333:security-group/sg-036f773a930b3f4fd",
+            "arn": "arn:aws:ec2:us-east-1:505058420581:security-group/sg-036f773a930b3f4fd",
             "description": "Allow EKS cluster to access ElastiCache Redis",
             "egress": [
               {
@@ -1756,7 +1756,7 @@
             ],
             "name": "retail-dev-redis-sg",
             "name_prefix": "",
-            "owner_id": "180789647333",
+            "owner_id": "505058420581",
             "region": "us-east-1",
             "revoke_rules_on_delete": false,
             "tags": {
@@ -1771,7 +1771,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "account_id": "180789647333",
+            "account_id": "505058420581",
             "id": "sg-036f773a930b3f4fd",
             "region": "us-east-1"
           },
@@ -1792,13 +1792,13 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:sqs:us-east-1:180789647333:retail-dev-orders-queue",
+            "arn": "arn:aws:sqs:us-east-1:505058420581:retail-dev-orders-queue",
             "content_based_deduplication": false,
             "deduplication_scope": "",
             "delay_seconds": 0,
             "fifo_queue": false,
             "fifo_throughput_limit": "",
-            "id": "https://sqs.us-east-1.amazonaws.com/180789647333/retail-dev-orders-queue",
+            "id": "https://sqs.us-east-1.amazonaws.com/505058420581/retail-dev-orders-queue",
             "kms_data_key_reuse_period_seconds": 300,
             "kms_master_key_id": "",
             "max_message_size": 262144,
@@ -1822,13 +1822,13 @@
               "Name": "retail-dev-orders-queue"
             },
             "timeouts": null,
-            "url": "https://sqs.us-east-1.amazonaws.com/180789647333/retail-dev-orders-queue",
+            "url": "https://sqs.us-east-1.amazonaws.com/505058420581/retail-dev-orders-queue",
             "visibility_timeout_seconds": 30
           },
           "sensitive_attributes": [],
           "identity_schema_version": 1,
           "identity": {
-            "url": "https://sqs.us-east-1.amazonaws.com/180789647333/retail-dev-orders-queue"
+            "url": "https://sqs.us-east-1.amazonaws.com/505058420581/retail-dev-orders-queue"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAsImRlbGV0ZSI6MTgwMDAwMDAwMDAwLCJ1cGRhdGUiOjE4MDAwMDAwMDAwMH19"
         }
@@ -1837,4 +1837,3 @@
   ],
   "check_results": null
 }
-

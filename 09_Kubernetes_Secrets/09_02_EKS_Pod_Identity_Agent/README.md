@@ -7,22 +7,22 @@ Amazon EKS Pod Identity enables pods in your cluster to securely assume IAM role
 
 ![EKS Pod Identity Flow](images/Pod-Identity-Worklow.jpg)
 
-1. **Create IAM Role**  
-   An IAM administrator creates a role that can be assumed by the new EKS service principal:  
-   `pods.eks.amazonaws.com`.  
-   - Trust policy can be restricted by cluster ARN or AWS account.  
-   - Attach required IAM policies (e.g., AmazonS3ReadOnlyAccess).  
+1. **Create IAM Role**
+   An IAM administrator creates a role that can be assumed by the new EKS service principal:
+   `pods.eks.amazonaws.com`.
+   - Trust policy can be restricted by cluster ARN or AWS account.
+   - Attach required IAM policies (e.g., AmazonS3ReadOnlyAccess).
 
-2. **Create Pod Identity Association**  
-   The EKS administrator associates the IAM Role with a Kubernetes Service Account + Namespace.  
-   - Done via the EKS Console or `CreatePodIdentityAssociation` API.  
+2. **Create Pod Identity Association**
+   The EKS administrator associates the IAM Role with a Kubernetes Service Account + Namespace.
+   - Done via the EKS Console or `CreatePodIdentityAssociation` API.
 
-3. **Webhook Mutation**  
-   When a pod using that Service Account is created, the **EKS Pod Identity Webhook** (running in the control plane) mutates the pod spec:  
-   - Injects environment variables such as `AWS_CONTAINER_CREDENTIALS_FULL_URI`.  
-   - Mounts a projected service account token for use by the Pod Identity Agent.  
+3. **Webhook Mutation**
+   When a pod using that Service Account is created, the **EKS Pod Identity Webhook** (running in the control plane) mutates the pod spec:
+   - Injects environment variables such as `AWS_CONTAINER_CREDENTIALS_FULL_URI`.
+   - Mounts a projected service account token for use by the Pod Identity Agent.
 
-**Verify Mutation Example:**    
+**Verify Mutation Example:**
 ```bash
 kubectl exec -it aws-cli -- env | grep AWS_CONTAINER
 AWS_CONTAINER_CREDENTIALS_FULL_URI=http://169.254.170.23/v1/credentials
@@ -46,7 +46,7 @@ AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE=/var/run/secrets/pods.eks.amazonaws.com/s
 
 5. **Pod Accesses AWS Resources**
    The AWS SDK/CLI inside the pod now has valid, short-lived credentials and can call AWS services (e.g., list S3 buckets).
-   
+
 
 ---
 
@@ -64,20 +64,20 @@ AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE=/var/run/secrets/pods.eks.amazonaws.com/s
 ## Step-00: What we’ll do
 In this demo, we’ll understand and implement the **Amazon EKS Pod Identity Agent (PIA)**.
 
-1. Install the **EKS Pod Identity Agent** add-on  
-2. Create a **Kubernetes AWS CLI Pod** in the EKS Cluster and attempt to list S3 buckets (this will fail initially)  
-3. Create an **IAM Role** with trust policy for Pod Identity → allow Pods to access **Amazon S3**  
-4. Create a **Pod Identity Association** between the Kubernetes Service Account and IAM Role  
-5. Re-test from the AWS CLI Pod, successfully list S3 buckets  
-6. Through this flow, we will clearly understand how **Pod Identity Agent** works in EKS  
+1. Install the **EKS Pod Identity Agent** add-on
+2. Create a **Kubernetes AWS CLI Pod** in the EKS Cluster and attempt to list S3 buckets (this will fail initially)
+3. Create an **IAM Role** with trust policy for Pod Identity → allow Pods to access **Amazon S3**
+4. Create a **Pod Identity Association** between the Kubernetes Service Account and IAM Role
+5. Re-test from the AWS CLI Pod, successfully list S3 buckets
+6. Through this flow, we will clearly understand how **Pod Identity Agent** works in EKS
 
 ---
 
 ## Step-01: Install EKS Pod Identity Agent
-1. Open **EKS Console** → **Clusters** → select your cluster (`eksdemo1`)  
-2. Go to **Add-ons** → **Get more add-ons**  
-3. Search for **EKS Pod Identity Agent**  
-4. Click **Next** → **Create**  
+1. Open **EKS Console** → **Clusters** → select your cluster (`eksdemo1`)
+2. Go to **Add-ons** → **Get more add-ons**
+3. Search for **EKS Pod Identity Agent**
+4. Click **Next** → **Create**
 
 This installs a **DaemonSet** (`eks-pod-identity-agent`) that enables Pod Identity associations.
 
@@ -92,7 +92,7 @@ kubectl get pods -n kube-system
 ---
 
 ## Step-02: Deploy AWS CLI Pod (without Pod Identity Association)
-### Step-02-01: Create Service Account 
+### Step-02-01: Create Service Account
 - ![01_k8s_service_account.yaml](kube-manifests/01_k8s_service_account.yaml)
 ```yaml
 apiVersion: v1
@@ -129,13 +129,13 @@ kubectl get pods
 kubectl exec -it aws-cli -- aws s3 ls
 ```
 
-**Observation:** ❌ This should **fail** because no IAM permissions are associated with the Pod.  
+**Observation:** ❌ This should **fail** because no IAM permissions are associated with the Pod.
 
 #### Error Message
 ```
 kalyan-mini2:04-00-EKS-Pod-Identity-Agent kalyan$ kubectl exec -it aws-cli -- aws s3 ls
 
-An error occurred (AccessDenied) when calling the ListBuckets operation: User: arn:aws:sts::180789647333:assumed-role/eksctl-eksdemo1-nodegroup-eksdemo1-NodeInstanceRole-kxEPBrWVcOzO/i-0d65729d6d09d2540 is not authorized to perform: s3:ListAllMyBuckets because no identity-based policy allows the s3:ListAllMyBuckets action
+An error occurred (AccessDenied) when calling the ListBuckets operation: User: arn:aws:sts::505058420581:assumed-role/eksctl-eksdemo1-nodegroup-eksdemo1-NodeInstanceRole-kxEPBrWVcOzO/i-0d65729d6d09d2540 is not authorized to perform: s3:ListAllMyBuckets because no identity-based policy allows the s3:ListAllMyBuckets action
 command terminated with exit code 254
 ```
 
@@ -144,9 +144,9 @@ command terminated with exit code 254
 ---
 
 ## Step-03: Create IAM Role for Pod Identity
-1. Go to **IAM Console** → **Roles** → **Create Role**  
-2. Select **Trusted entity type** → **Custom trust policy**  
-3. Add trust policy for Pod Identity, for example:  
+1. Go to **IAM Console** → **Roles** → **Create Role**
+2. Select **Trusted entity type** → **Custom trust policy**
+3. Add trust policy for Pod Identity, for example:
 
 ```json
 {
@@ -166,19 +166,19 @@ command terminated with exit code 254
 }
 ```
 
-4. Attach **AmazonS3ReadOnlyAccess** policy  
-5. Create role → example name: `EKS-PodIdentity-S3-ReadOnly-Role-101`  
+4. Attach **AmazonS3ReadOnlyAccess** policy
+5. Create role → example name: `EKS-PodIdentity-S3-ReadOnly-Role-101`
 
 ---
 
 ## Step-04: Create Pod Identity Association
-* Go to **EKS Console** → Cluster → **Access** → **Pod Identity Associations**  
-* Create new association:  
+* Go to **EKS Console** → Cluster → **Access** → **Pod Identity Associations**
+* Create new association:
 
-  * Namespace: `default`  
-  * Service Account: `aws-cli-sa`  
-  * IAM Role: `EKS-PodIdentity-S3-ReadOnly-Role-101`  
-  * Click on **create**  
+  * Namespace: `default`
+  * Service Account: `aws-cli-sa`
+  * IAM Role: `EKS-PodIdentity-S3-ReadOnly-Role-101`
+  * Click on **create**
 
 ---
 
@@ -215,17 +215,14 @@ kubectl exec -it aws-cli -- aws s3 ls
 kubectl delete -f kube-manifests/
 ```
 
-- **Remove Pod Identity Association** → via **EKS Console → Access → Pod Identity Associations**  
+- **Remove Pod Identity Association** → via **EKS Console → Access → Pod Identity Associations**
 - **Remove IAM role** → via **IAM Console → Roles** `EKS-PodIdentity-S3-ReadOnly-Role-101`
 
 ---
 
 ## Step-07: Concept Recap
 
-* **Without Pod Identity Association:** Pod has no IAM permissions → AWS API calls fail  
-* **With Pod Identity Association:** Pod Identity Agent maps Pod’s Service Account → IAM Role → AWS Permissions → API calls succeed  
+* **Without Pod Identity Association:** Pod has no IAM permissions → AWS API calls fail
+* **With Pod Identity Association:** Pod Identity Agent maps Pod’s Service Account → IAM Role → AWS Permissions → API calls succeed
 
 ---
-
-
-

@@ -4,7 +4,7 @@
 # Script: update-s3-bucket.sh
 # Purpose: Update S3 bucket name in all Terraform files
 # Usage: ./update-s3-bucket.sh YOUR-BUCKET-NAME
-# 
+#
 # IMPORTANT: Create your S3 bucket FIRST before running this script!
 #############################################
 
@@ -16,7 +16,7 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 # Old bucket name to replace
-OLD_BUCKET="tfstate-dev-us-east-1-jpjtof"
+OLD_BUCKET="tfstate-dev-us-east-1-p4z95l"
 
 echo ""
 echo "============================================="
@@ -185,4 +185,3 @@ echo ""
 echo "============================================="
 echo -e "  ${GREEN}Done! Happy Learning! 🚀${NC}"
 echo "============================================="
-

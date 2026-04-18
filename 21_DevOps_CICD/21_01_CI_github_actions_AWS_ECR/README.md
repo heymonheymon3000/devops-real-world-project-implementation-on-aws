@@ -196,7 +196,7 @@ aws iam list-open-id-connect-providers
 # Create OIDC Provider
 aws iam create-open-id-connect-provider \
   --url https://token.actions.githubusercontent.com \
-  --client-id-list sts.amazonaws.com 
+  --client-id-list sts.amazonaws.com
 
 # List OIDC Providers
 aws iam list-open-id-connect-providers
@@ -291,7 +291,7 @@ The workflow pushes the **same Docker image** with two different tags:
 - **Purpose:** Immutable reference tied to Git commit
 - **Behavior:** Never changes (permanent)
 - **Used in:** `chart/values-ui.yaml` (production deployments)
-- **Benefits:** 
+- **Benefits:**
   - [x] Full traceability (Git commit -> Docker image -> Deployment)
   - [x] Safe rollbacks to exact versions
   - [x] Prevents "tag drift" issues
@@ -299,7 +299,7 @@ The workflow pushes the **same Docker image** with two different tags:
 **Example in Helm values file:**
 ```yaml
 image:
-  repository: 180789647333.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui
+  repository: 505058420581.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui
   tag: sha-a1b2c3d  # SHA tag only (immutable)
   # NOT using "latest" - too risky for production!
 ```
@@ -411,14 +411,14 @@ or
 
 Look for these success indicators in the logs:
 ```
-[PASS] Checkout code                        
-[PASS] Configure AWS credentials via OIDC   
-[PASS] Login to Amazon ECR                  
-[PASS] Define image tags                    
-[PASS] Build and push Docker images         
-[PASS] Setup Git auth using GITHUB_TOKEN    
-[PASS] Update Helm values file              
-[PASS] CI Complete                          
+[PASS] Checkout code
+[PASS] Configure AWS credentials via OIDC
+[PASS] Login to Amazon ECR
+[PASS] Define image tags
+[PASS] Build and push Docker images
+[PASS] Setup Git auth using GITHUB_TOKEN
+[PASS] Update Helm values file
+[PASS] CI Complete
 ```
 
 ---
@@ -471,7 +471,7 @@ cat src/ui/chart/values-ui.yaml | grep -A 2 "image:"
 
 # Expected output:
 # image:
-#   repository: 180789647333.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui
+#   repository: 505058420581.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui
 #   tag: sha-a1b2c3d
 ```
 
@@ -492,10 +492,10 @@ git log --oneline -5
 Your Docker images are now available at these URIs:
 ```bash
 # Latest tag (mutable)
-180789647333.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui:latest
+505058420581.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui:latest
 
 # SHA tag (immutable - used in production)
-180789647333.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui:sha-a1b2c3d
+505058420581.dkr.ecr.us-east-1.amazonaws.com/retail-store/ui:sha-a1b2c3d
 ```
 
 
@@ -639,4 +639,3 @@ You've successfully built a **production-ready CI pipeline** with:
 - **ECR integration** (secure, private container registry)
 
 **Your images are now ready for ArgoCD to deploy to EKS!**
-
