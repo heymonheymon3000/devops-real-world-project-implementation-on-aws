@@ -14,10 +14,10 @@
 
 # DynamoDB Table: Items - us-west-2
 resource "aws_dynamodb_table" "items_west2" {
-  provider       = aws.west2
-  name           = "Items"
-  billing_mode   = "PAY_PER_REQUEST"    # On-demand pricing (no capacity planning)
-  hash_key       = "id"
+  provider     = aws.west2
+  name         = "Items"
+  billing_mode = "PAY_PER_REQUEST" # On-demand pricing (no capacity planning)
+  hash_key     = "id"
 
   attribute {
     name = "id"
@@ -31,9 +31,12 @@ resource "aws_dynamodb_table" "items_west2" {
 
   # Global Secondary Index for customer-based lookups
   global_secondary_index {
-    name               = "idx_global_customerId"
-    hash_key           = "customerId"
-    projection_type    = "ALL"
+    name = "idx_global_customerId"
+    key_schema {
+      attribute_name = "customerId"
+      key_type       = "HASH"
+    }
+    projection_type = "ALL"
   }
 
   tags = {
